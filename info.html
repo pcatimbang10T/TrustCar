@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Company Shuttle Bus | Information</title>
+
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+<body>
+
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-sm navbar-dark">
+        <div class="container-fluid">
+
+
+            <a class="navbar-brand" href="index.html">
+                <img src="images/logo.png"
+                     alt="TrustCar Logo"
+                     width="60"
+                     class="rounded-pill">
+            </a>
+
+
+            <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#mynavbar">
+
+
+                <span class="navbar-toggler-icon"></span>
+
+
+            </button>
+
+
+            <div class="collapse navbar-collapse" id="mynavbar">
+
+
+                <ul class="navbar-nav me-auto">
+
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+
+
+                    <li class="nav-item">
+                        <a class="nav-link active" href="info.html">Information</a>
+                    </li>
+
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="feedback.html">Feedback</a>
+                    </li>
+
+
+                </ul>
+
+
+                <form class="d-flex">
+                    <input
+                        class="form-control me-2"
+                        type="search"
+                        placeholder="Search">
+
+
+                    <button class="btn btn-primary" type="submit">
+                        Search
+                    </button>
+                </form>
+
+
+            </div>
+
+
+        </div>
+    </nav>
+
+
+    <main class="container mt-5">
+
+
+        <div class="row justify-content-center g-4">
+
+
+            <!-- Guardian Info -->
+            <section class="col-lg-6">
+                <div class="contact-card">
+
+
+                    <h2 class="text-center mb-4">
+                        Guardian Information
+                    </h2>
+
+
+                    <form>
+
+
+                        <label for="company">Full Name</label>
+                        <input
+                            type="text"
+                            id="fullname"
+                            name="fullname"
+                            placeholder="Enter full name"
+                            required>
+
+                        <label for="subscription">Do you consent to being recorded by the vehicle's security cameras during your ride for safety and security purposes?</label>
+                        <select id="subscription" name="subscription" required>
+                            <option value="" selected disabled>Consent Form</option>
+                            <option>Yes</option>
+                        </select>
+
+                        <label for="subscription">Allow Same Sex Carpool</label>
+                        <select id="subscription" name="subscription" required>
+                            <option value="" selected disabled>Same Sex Carpool</option>
+                            <option>Yes</option>
+                            <option>No</option>
+                        </select>
+
+
+                        <label for="payment">Payment Method</label>
+                        <select id="payment" name="payment" required>
+                            <option value="" selected disabled>Select payment method</option>
+                            <option>GCash</option>
+                            <option>Bank Transfer</option>
+                            <option>Credit Card</option>
+                            <option>Cash</option>
+                        </select>
+
+
+                        <label for="email">Email Address</label>
+                        <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            placeholder="example@email.com"
+                            required>
+
+
+                        <label for="message">Additional Notes</label>
+                        <textarea
+                            id="message"
+                            name="message"
+                            rows="3"></textarea>
+
+
+                        <div class="button-group">
+                            <button type="reset" class="contact-btn">
+                                Reset
+                            </button>
+
+
+                            <button type="submit" class="contact-btn">
+                                Submit Registration
+                            </button>
+                        </div>
+
+
+                    </form>
+
+
+                </div>
+            </section>
+
+
+            <!-- Driver Application -->
+            <section class="col-lg-6">
+                <div class="contact-card">
+
+
+                    <h2 class="text-center mb-4">
+                        Driver Application
+                    </h2>
+
+
+                    <form>
+
+
+                        <label for="name">Full Government Name</label>
+                        <input
+                            type="text"
+                            id="name"
+                            name="name"
+                            placeholder="Enter your full name"
+                            required>
+
+                        <label for="subscription">Do you consent to being recorded by the vehicle's security cameras during your ride for safety and security purposes?</label>
+                        <select id="subscription" name="subscription" required>
+                            <option value="" selected disabled>Consent Form</option>
+                            <option>Yes</option>
+                        </select>
+
+                        <label for="license">Driver's License</label>
+                        <select id="license" name="license" required>
+                            <option value="" selected disabled>Type of License</option>
+                            <option>Non-Professional</option>
+                            <option>Professional</option>
+                        </select>
+
+
+                        <label for="clearance">NBI Clearance</label>
+                        <select id="clearance" name="clearance" required>
+                            <option value="" selected disabled>Select</option>
+                            <option>Yes</option>
+                            <option>No</option>
+                        </select>
+
+
+                        <label for="driverEmail">Email Address</label>
+                        <input
+                            type="email"
+                            id="driverEmail"
+                            name="driverEmail"
+                            placeholder="example@email.com"
+                            required>
+
+
+                        <label for="driverNotes">Vehicle Information</label>
+                        <textarea
+                            id="driverNotes"
+                            name="driverNotes"
+                            rows="3"></textarea>
+
+
+                        <div class="button-group">
+
+
+                            <button type="reset" class="contact-btn">
+                                Reset
+                            </button>
+
+
+                            <button type="submit" class="contact-btn">
+                                Submit Application
+                            </button>
+
+
+                        </div>
+
+
+                    </form>
+
+
+                </div>
+            </section>
+
+
+        </div>
+
+
+    </main>
+
+
+    <footer class="text-center mt-5 mb-3">
+        <em>Made by Catimbang</em>
+    </footer>
+
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+
+</body>
+
+
+</html>
